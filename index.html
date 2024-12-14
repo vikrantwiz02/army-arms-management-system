@@ -1,0 +1,221 @@
+<html>
+<head>
+    <title>Army Arms Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js"></script>
+    <style>
+        /* BODY FOR ALL PAGES */
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url('./military-camouflage-army-cloth-texture-background-free-vector.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  color: #0a0000;
+}
+
+
+/* LOGIN */
+
+.login_container {
+  text-align: center;
+  height: 236px;
+  margin: 250px;
+  background: rgba(254, 252, 252, 0.723);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.Heading {
+  font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+  display: block;
+  position: center;
+  transform: translate(38%, 58%);
+  width: 800px;
+  height: 80px;
+  margin-right: 589px;
+  background: #fff;
+  padding: 0px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: larger;
+}
+.header {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-form label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.login-form input {
+  width: 250px;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+.login-form button {
+  width: 270px;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+.login-form button:hover {
+  background-color: #45a049;
+}
+.login-form .icon {
+  margin-right: 10px;
+}
+
+.error-message-container {
+  position: absolute;
+  margin-top: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.error-message {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: red;
+}
+
+/* MODULES */
+
+.Heading {
+  font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+  display: block;
+  position: absolute;
+  transform: translate(38%, 58%);
+  width: 800px;
+  margin-right: 589px;
+  margin-bottom: 700px;
+  background: #fff;
+  padding: 0px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: larger;
+}
+
+.logout-button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: #ffffff;
+  color: rgb(6, 5, 5);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-right: 15px;
+  margin-top: 20px;
+}
+
+.logout-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.modules_container {
+  margin-top: 130px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: calc(59vh - 80px);
+  padding: 50px;
+}
+
+.modules_item {
+  background-color: white;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.modules_item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.modules_item img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.modules_item a {
+  color: purple;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.modules_row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 54px;
+  align-items: center ;
+  display: flex;
+  align-items: center;
+  
+}
+    </style>
+</head>
+<body>
+    <div class="Heading">
+        <h1>
+            <center> Army Arms Management System </center>
+        </h1>
+    </div>
+    <div class="login_container">
+        
+        <form class="login-form" action="index.php" method="post">
+            <label for="userid"><i class="fas fa-user icon"></i>UserI'd</label>
+            <input type="textfield" id="userid" name="userid" required>
+            <label for="password"><i class="fas fa-lock icon"></i>Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+            </form>
+            </div>
+</body>
+</html>

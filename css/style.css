@@ -1,0 +1,77 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('./military-camouflage-army-cloth-texture-background-free-vector.jpg');
+    background-size: cover;
+    height: 100vh;
+    color: #0a0000;
+    background-attachment: fixed;
+    margin: 0;
+}
+.weapon_container {
+    width: 94%;
+    margin: 20px auto;
+    padding: 1%;
+    background-color: #f9f9f9;
+    border: 1.5px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    height: auto;
+    min-height: 10%;
+    max-height: 40vh;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.search-bar, .filter-options {
+    margin-bottom: 1rem;
+}
+
+.add-form {
+    margin-top: 2rem;
+}
+
